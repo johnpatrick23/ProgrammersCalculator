@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HexadecimalActivity">
+
+    <EditText
+        android:id="@+id/mEditTextDecimalResult"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusable="false"
+        android:gravity="center|right"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:textSize="42sp"
+        android:text="@string/_0"
+        android:typeface="serif"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#777777"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LayoutHeight"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mButtonD"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/d"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonE"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/e"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonF"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/f"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonDel"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/del"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonClear"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LayoutHeight"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mButtonA"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/a"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonB"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/b"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonC"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/c"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonMultiply"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/multiply"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonDivide"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/divide"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LayoutHeight"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mButton7"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_7"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButton8"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_8"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButton9"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_9"
+                android:singleLine="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonAddition"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/addition"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonSubtract"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/subtract"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LayoutHeight"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mButton4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_4"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButton5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_5"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButton6"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_6"
+                android:singleLine="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButton0"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_0"
+                android:singleLine="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButtonEquals"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/equals"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LayoutHeight"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mButton1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButton2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                android:id="@+id/mButton3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/_3"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:enabled="false" />
+
+            <include layout="@layout/layout_vertical_line" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
