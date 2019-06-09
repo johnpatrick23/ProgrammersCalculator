@@ -24,6 +24,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#777777"
+        app:layout_constraintBottom_toTopOf="@+id/mButtonBinary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/mButtonBinary"
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -36,6 +44,14 @@
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toTopOf="@+id/mButtonDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#777777"
+        app:layout_constraintBottom_toTopOf="@+id/mButtonOctadecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -55,6 +71,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#777777"
+        app:layout_constraintBottom_toTopOf="@+id/mButtonHexadecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/mButtonHexadecimal"
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -67,6 +91,14 @@
         android:textStyle="bold"
         android:typeface="serif"
         app:layout_constraintBottom_toTopOf="@+id/mButtonOctadecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#777777"
+        app:layout_constraintBottom_toTopOf="@+id/mButtonDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
